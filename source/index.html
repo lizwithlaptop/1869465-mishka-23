@@ -11,8 +11,8 @@
           <img class="logo__icon" src="img/mishka-logo.svg" alt="Логотип">
         </a>
         <nav class="header__nav nav">
-          <button class="hamburger-toggler" type="button" aria-label="Открыть навигацию по сайту">
-            <img class="hamburger-toggler__icon" src="img/menu.svg" alt="Меню">
+          <button class="hamburger-toggler" type="button">
+            <span class="visually-hidden">Открыть навигацию по сайту</span>
           </button>
           <ul class="nav__list nav__list--main">
             <li class="nav__item">
@@ -25,15 +25,11 @@
           <ul class="nav__list nav__list--utilities">
             <li class="nav__item">
               <a class="nav__link nav__link--search" href="#">
-                <img class="search__icon" src="img/search.svg" alt="Поиск">
-                <span>Поиск по сайту</span>
+                <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--cart" href="#">
-                <img class="cart__icon" src="img/cart.svg" alt="Корзина">
-                <span>Корзина: пока пуста</span>
-              </a>
+              <a class="nav__link nav__link--cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
           <ul class="nav__list nav__list--additional">
@@ -65,7 +61,7 @@
       <section class="section selected-product">
         <div class="container">
           <h2 class="selected-product__title title">Вязаные корзинки</h2>
-          <div class="selected-product__label label">Товар недели</div>
+          <div class="selected-product__badge">Товар недели</div>
           <div class="selected-product__info">
             <div class="selected-product__desc">
               <p>
@@ -86,7 +82,7 @@
           </div>
           <div class="selected-product__order">
             <div class="selected-product__price">Цена: 990 руб.</div>
-            <button class="selected-product__button button button--order" type="button" aria-label="Заказать">Заказать</button>
+            <button class="selected-product__button button button--order" type="button">Заказать</button>
           </div>
         </div>
       </section>
@@ -122,14 +118,14 @@
             </li>
           </ul>
           <div class="reviews__arrows">
-            <button class="reviews__arrow reviews__arrow--prev" type="button" aria-label="К предыдущему отзыву">
-              <img class="reviews__arrow-pic" src="img/huge-arrow-left.svg" alt="Стрелка влево">
+            <button class="reviews__arrow reviews__arrow--prev" type="button">
+              <span class="visually-hidden">К предыдущему отзыву</span>
             </button>
-            <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="К следующему отзыву">
-              <img class="reviews__arrow-pic" src="img/huge-arrow-right.svg" alt="Стрелка вправо">
+            <button class="reviews__arrow reviews__arrow--next" type="button">
+              <span class="visually-hidden">К следующему отзыву</span>
             </button>
           </div>
-          <button class="reviews__button button" type="button" aria-label="Написать отзыв">Написать</button>
+          <button class="reviews__button button" type="button">Написать</button>
         </div>
       </section>
       <section class="section contacts">
@@ -146,9 +142,9 @@
             </dd>
           </dl>
           <div class="contacts__map map">
-            <img class="map__pic" src="img/map.png" alt="Карта">
+            <img class="map__pic" src="img/map.png" alt="Карта офиса по адресу: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </div>
-          <button class="contacts__button button" type="button" aria-label="Напишите нам">Напишите нам</button>
+          <button class="contacts__button button" type="button">Напишите нам</button>
         </div>
       </section>
     </main>
@@ -160,17 +156,17 @@
         <ul class="footer__socials socials">
           <li class="socials__item">
               <a href="#" class="socials__link">
-                <img class="socials__icon" src="img/insta.svg" alt="Инстаграм">
+                <span class="visually-hidden">Instagram</span>
               </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link">
-              <img class="socials__icon" src="img/fb.svg" alt="Фейсбук">
+              <span class="visually-hidden">Facebook</span>
             </a>
           </li>
           <li class="socials__item">
             <a href="#" class="socials__link">
-              <img class="socials__icon" src="img/twitter.svg" alt="Твиттер">
+              <span class="visually-hidden">Twitter</span>
             </a>
           </li>
         </ul>
@@ -178,22 +174,28 @@
       <div class="footer__copyright">
         <span class="footer__copyright-text">Разработано</span>
         <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="footer__copyright-pic" src="img/htmlacademy.svg" alt="Логотип HTML Academy">
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
     <div class="page__overlay overlay">
       <div class="overlay__modal modal">
         <h2 class="modal__title title title--modal">Добавить в корзину</h2>
-        <form class="modal__cart-form cart-form">
+        <form class="modal__cart-form cart-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="cart-form__fieldset">
             <legend class="cart-form__legend">Выберите размер:</legend>
-            <input class="cart-form__radio" type="radio" id="size-small" name="size" value="small" checked>
-            <label class="cart-form__label" for="size-small">S</label>
-            <input class="cart-form__radio" type="radio" id="size-medium" name="size" value="medium">
-            <label class="cart-form__label" for="size-medium">M</label>
-            <input class="cart-form__radio" type="radio" id="size-large" name="size" value="large">
-            <label class="cart-form__label" for="size-large">L</label>
+            <label class="cart-form__label" for="size-small">
+              <input class="cart-form__radio" type="radio" id="size-small" name="size" value="small" checked>
+              <span>S</span>
+            </label>
+            <label class="cart-form__label" for="size-medium">
+              <input class="cart-form__radio" type="radio" id="size-medium" name="size" value="medium">
+              <span>M</span>
+            </label>
+            <label class="cart-form__label" for="size-large">
+              <input class="cart-form__radio" type="radio" id="size-large" name="size" value="large">
+              <span>L</span>
+            </label>
           </fieldset>
           <button class="cart-form__button button button--modal" type="submit">Добавить</button>
         </form>
