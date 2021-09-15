@@ -20,7 +20,7 @@
   margin-bottom: 32px;
 
   &--eco {
-    &:before {
+    &::before {
       content: "";
       width: 33px;
       height: 38px;
@@ -28,8 +28,9 @@
       margin-bottom: 16px;
     }
   }
+
   &--style {
-    &:before {
+    &::before {
       content: "";
       width: 47px;
       height: 27px;
@@ -37,8 +38,9 @@
       margin-bottom: 26px;
     }
   }
+
   &--likes {
-    &:before {
+    &::before {
       content: "";
       width: 34px;
       height: 27px;
@@ -46,8 +48,9 @@
       margin-bottom: 21px;
     }
   }
+
   &--handmade {
-    &:before {
+    &::before {
       content: "";
       width: 35px;
       height: 34px;
@@ -55,8 +58,9 @@
       margin-bottom: 17px;
     }
   }
+
   &--support {
-    &:before {
+    &::before {
       content: "";
       width: 55px;
       height: 23px;
@@ -64,8 +68,9 @@
       margin-bottom: 26px;
     }
   }
+
   &--giftwrap {
-    &:before {
+    &::before {
       content: "";
       width: 33px;
       height: 32px;

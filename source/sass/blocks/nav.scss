@@ -1,8 +1,7 @@
 .nav {
   position: relative;
   display: grid;
-  grid-template:
-    ". logo hamburger" 79px / 1fr min-content 1fr;
+  grid-template: ". logo hamburger" 79px / 1fr min-content 1fr;
   align-items: center;
   justify-items: end;
   border-top: $border-width solid $border-color;
@@ -32,12 +31,14 @@
   width: fit-content;
   margin: 0 auto;
 
-  &--main {
-    // grid-area: main;
-  }
-  &--utilities {
-    // grid-area: utilities;
-  }
+  // &--main {
+  //   grid-area: main;
+  // }
+
+  // &--utilities {
+  //   grid-area: utilities;
+  // }
+
   &--additional {
     display: none;
     // grid-area: additional;
@@ -50,7 +51,8 @@
   height: 79px;
   // border-bottom: $border-width solid $border-color;
 
-  &:before, &:after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     width: 100vw;
@@ -58,11 +60,11 @@
     top: 100%;
   }
 
-  &:before {
+  &::before {
     right: 0;
   }
 
-  &:after {
+  &::after {
     left: 0;
   }
 }
@@ -78,7 +80,7 @@
 
   &--search {
     // left: calc(-1 * (25px + 18px));
-    &:before {
+    &::before {
       content: "";
       width: 18px;
       height: 18px;
@@ -87,9 +89,10 @@
       margin-right: 25px;
     }
   }
+
   &--cart {
     // left: calc(-1 * (25px + 21px));
-    &:before {
+    &::before {
       content: "";
       width: 21px;
       height: 18px;

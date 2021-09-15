@@ -8,11 +8,14 @@
     text-align: center;
   }
 
-  &--hero, &--order, &--catalog {
+  &--hero,
+  &--order,
+  &--catalog {
     font-size: 27px;
   }
 
-  &--order, &--catalog {
+  &--order,
+  &--catalog {
     width: 100vw;
     background-color: $bg-secondary-color;
     padding: 73.5px 0;
@@ -25,7 +28,7 @@
     font-size: 17px;
     line-height: 24px;
 
-    &:before {
+    &::before {
       content: "";
       width: 32px;
       height: 22px;

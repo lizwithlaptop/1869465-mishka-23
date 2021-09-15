@@ -58,7 +58,7 @@
   font-weight: bold;
   text-transform: uppercase;
 
-  &:after {
+  &::after {
     content: "";
     position: static;
     height: $border-width;
@@ -80,7 +80,8 @@
   }
 }
 
-.order-form__radio, .order-form__checkbox {
+.order-form__radio,
+.order-form__checkbox {
   display: none;
 }
 
@@ -90,17 +91,17 @@
   color: $text-secondary-color;
   border: $border-input-width solid $text-secondary-color;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     display: block;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     background-color: $border-legend-color;
     transform: translate(-50%, -50%);
-    transition: width .05s, height .05s;
+    transition: width 0.05s, height 0.05s;
   }
 
   &--radio {
@@ -109,7 +110,7 @@
     border-radius: 50%;
     margin-right: 19px;
 
-    &:after {
+    &::after {
       border-radius: 50%;
     }
   }
@@ -122,31 +123,31 @@
 }
 
 .order-form__radio:checked {
-  &+.order-form__fake {
-      &:after {
-          content: "";
-          width: 18.33px;
-          height: 18.33px;
-      }
+  & + .order-form__fake {
+    &::after {
+      content: "";
+      width: 18.33px;
+      height: 18.33px;
+    }
   }
 }
 
 .order-form__checkbox:checked {
-  &+.order-form__fake {
-      &:after {
-          content: "";
-          display: block;
-          width: 19px;
-          height: 10px;
-          background: transparent;
-          border-left: $text-primary-color solid $border-width;
-          border-bottom: $text-primary-color solid $border-width;
-          transform: rotate(-45deg);
-          transition: width .05s, height .05s;
-          position: absolute;
-          top: 25%;
-          left: 23%;
-      }
+  & + .order-form__fake {
+    &::after {
+      content: "";
+      display: block;
+      width: 19px;
+      height: 10px;
+      background: transparent;
+      border-left: $text-primary-color solid $border-width;
+      border-bottom: $text-primary-color solid $border-width;
+      transform: rotate(-45deg);
+      transition: width 0.05s, height 0.05s;
+      position: absolute;
+      top: 25%;
+      left: 23%;
+    }
   }
 }
 

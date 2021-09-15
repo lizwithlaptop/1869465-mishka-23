@@ -5,7 +5,8 @@
   grid-template-columns: max-content auto;
 }
 
-.details__left, .details__right {
+.details__left,
+.details__right {
   padding: 12px 0;
   border-bottom: $border-width solid $border-color;
 }
