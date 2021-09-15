@@ -1,0 +1,32 @@
+.footer {
+  background-color: $bg-secondary-color;
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__socials {
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+}
+
+.footer__copyright-text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-right: 27px;
+}
+
+.footer__copyright-link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background: transparent url("../img/icons/htmlacademy.svg") center / cover no-repeat;
+}

@@ -1,0 +1,50 @@
+.reviews {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 6px;
+    background-image: url("../img/decor/zigzag-line.svg");
+  }
+}
+
+.reviews__title {
+  margin-top: 26px;
+  margin-bottom: 14px;
+}
+
+.reviews__list {
+  display: flex;
+}
+
+// .reviews__item {}
+
+.reviews__arrows {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.reviews__arrow {
+  width: 50%;
+  height: 52px;
+  border: $border-width solid $border-color;
+  padding: 12px 39px;
+  background-repeat: no-repeat;
+
+  &--prev {
+    background: transparent url("../img/icons/arrow-left-icon.svg") center / auto no-repeat;
+    border-right: 0;
+  }
+
+  &--next {
+    background: transparent url("../img/icons/arrow-right-icon.svg") center / auto no-repeat;
+  }
+}
+
+.reviews__button {
+  margin-bottom: 45px;
+}

@@ -1,0 +1,21 @@
+.details {
+  font-size: 15px;
+  line-height: 20px;
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+.details__left, .details__right {
+  padding: 12px 0;
+  border-bottom: $border-width solid $border-color;
+}
+
+.details__left {
+  grid-column-start: 1;
+}
+
+.details__right {
+  grid-column-start: 2;
+  padding-inline-start: 40px;
+  margin-inline-start: 0;
+}

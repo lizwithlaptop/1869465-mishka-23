@@ -1,0 +1,44 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__item {
+  height: 103px;
+  background-color: $decor-primary-color;
+
+  &:last-child {
+    background-color: $decor-secondary-color;
+  }
+}
+
+.categories__link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  color: $bg-primary-color;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+
+  &--homedecor {
+    &:after {
+      content: "";
+      width: 40px;
+      height: 62px;
+      background-image: url("../img/icons/interior-icon.svg");
+    }
+  }
+
+  &--toy {
+    padding-right: 21px;
+    &:after {
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/icons/toy-icon.svg");
+    }
+  }
+}

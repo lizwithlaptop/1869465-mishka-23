@@ -1,0 +1,11 @@
+.hamburger-toggler {
+  width: 20px;
+  height: 14px;
+  background: transparent url("../img/icons/hamburger-icon.svg") center / cover no-repeat;
+
+  &--opened {
+    width: 21px;
+    height: 20px;
+    background: transparent url("../img/icons/close-icon.svg") center / cover no-repeat;
+  }
+}

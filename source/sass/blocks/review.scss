@@ -1,0 +1,24 @@
+.review {
+  color: $text-secondary-color;
+}
+
+.review__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 33px;
+}
+
+.review__author {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.review__author-name {
+  color: $text-primary-color;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.review__author-profile {
+  line-height: 30px;
+}

@@ -1,0 +1,65 @@
+.selected-product {
+  color: $text-secondary-color;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 6px;
+    background-image: url("../img/decor/zigzag-line.svg");
+  }
+}
+
+.selected-product__title {
+  margin-top: 31px;
+}
+
+.selected-product__badge {
+  color: $decor-primary-color;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 17.5px;
+}
+
+// .selected-product__info {}
+
+.selected-product__desc {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+.selected-product__details {
+  margin-bottom: 28px;
+}
+
+.selected-product__picture {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.selected-product__pic {
+  max-width: 100%;
+}
+
+.selected-product__order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-product__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+
+.selected-product__button {
+  margin-bottom: 36px;
+}

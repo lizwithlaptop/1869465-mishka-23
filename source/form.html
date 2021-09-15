@@ -2,100 +2,117 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>HTML Academy: Мишка - Форма заказа</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="page">
   <header class="page__header header">
-    <div class="container">
-      <a class="header__logo logo" href="#">
-        <img class="logo__icon" src="img/mishka-logo.svg" alt="Логотип">
-      </a>
+    <div class="container container--full-screen">
       <nav class="header__nav nav">
-        <button class="hamburger-toggler" type="button">
+        <a class="nav__logo logo" href="#">
+          <img class="logo__icon" src="img/logos/mishka-logo.svg" alt="Логотип">
+        </a>
+        <button class="nav__hamburger hamburger-toggler" type="button">
           <span class="visually-hidden">Открыть навигацию по сайту</span>
+          <!-- <span class="visually-hidden">Скрыть навигацию по сайту</span> -->
         </button>
-        <ul class="nav__list nav__list--main">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="nav__list nav__list--utilities">
-          <li class="nav__item">
-            <a class="nav__link nav__link--search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link nav__link--cart" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <ul class="nav__list nav__list--additional">
-          <li class="nav__item">
-            <a class="nav__link" href="#">Новые поступления</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#">Распродажа</a>
-          </li>
-        </ul>
+        <div class="nav__menu">
+          <ul class="nav__list nav__list--main">
+            <li class="nav__item">
+              <a class="nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--utilities">
+            <li class="nav__item">
+              <a class="nav__link nav__link--search" href="#">
+                Поиск по сайту
+                <!-- <span class="visually-hidden">Поиск</span> -->
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--cart" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--additional">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Новые поступления</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <p class="header__delivery-info">Бесплатная доставка по России</p>
     </div>
   </header>
   <main class="page__main main">
     <section class="section order">
+      <div class="container container--full-screen">
+        <h1 class="order__title title title--order title--centered">Вязание на заказ</h1>
+      </div>
       <div class="container">
-        <h1 class="order__title title title--centered">Вязание на заказ</h1>
+        <h2 class="visually-hidden">Форма заказа</h2>
         <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="order-form__desc">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
           <div class="order-form__block">
-            <fieldset class="order-form__fieldset">
+            <fieldset class="order-form__fieldset order-form__fieldset--type">
               <legend class="order-form__legend">Тип</legend>
               <label class="order-form__label" for="homedecor">
                 <input class="order-form__radio" type="radio" id="homedecor" name="type" value="homedecor" checked>
+                <div class="order-form__fake order-form__fake--radio"></div>
                 <span>Аксессуар для интерьера</span>
               </label>
               <label class="order-form__label" for="toy">
                 <input class="order-form__radio" type="radio" id="toy" name="type" value="toy">
+                <div class="order-form__fake order-form__fake--radio"></div>
                 <span>Детская игрушка</span>
               </label>
             </fieldset>
           </div>
           <div class="order-form__block">
-            <fieldset class="order-form__fieldset">
+            <fieldset class="order-form__fieldset order-form__fieldset--color">
               <legend class="order-form__legend">Цвет</legend>
               <label class="order-form__label" for="color-white">
                 <input class="order-form__checkbox" type="checkbox" id="color-white" name="white" checked>
+                <div class="order-form__fake order-form__fake--checkbox"></div>
                 <span>Белый</span>
               </label>
               <label class="order-form__label" for="color-grey">
                 <input class="order-form__checkbox" type="checkbox" id="color-grey" name="grey" checked>
+                <div class="order-form__fake order-form__fake--checkbox"></div>
                 <span>Серый</span>
               </label>
               <label class="order-form__label" for="color-tiffany">
                 <input class="order-form__checkbox" type="checkbox" id="color-tiffany" name="tiffany">
+                <div class="order-form__fake order-form__fake--checkbox"></div>
                 <span>«Тиффани»</span>
               </label>
               <label class="order-form__label" for="color-black">
                 <input class="order-form__checkbox" type="checkbox" id="color-black" name="black">
+                <div class="order-form__fake order-form__fake--checkbox"></div>
                 <span>Черный</span>
               </label>
               <label class="order-form__label" for="color-pink">
                 <input class="order-form__checkbox" type="checkbox" id="color-pink" name="pink">
+                <div class="order-form__fake order-form__fake--checkbox"></div>
                 <span>Розовый</span>
               </label>
               <label class="order-form__label" for="color-orange">
                 <input class="order-form__checkbox" type="checkbox" id="color-orange" name="orange">
+                <div class="order-form__fake order-form__fake--checkbox"></div>
                 <span>Оранжевый</span>
               </label>
             </fieldset>
           </div>
           <div class="order-form__block">
-            <fieldset class="order-form__fieldset">
+            <fieldset class="order-form__fieldset order-form__fieldset--fullname">
               <legend class="order-form__legend">ФИО</legend>
               <label class="order-form__label" for="firstname">
                 <span>Имя:</span>
@@ -112,28 +129,28 @@
             </fieldset>
           </div>
           <div class="order-form__block">
-            <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset order-form__fieldset--single">
               <legend class="order-form__legend">Тел</legend>
               <label class="order-form__label" for="phone">
-                <input class="order-form__text" type="text" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="order-form__text" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               </label>
-            </fieldset>
+            </div>
           </div>
           <div class="order-form__block">
-            <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset order-form__fieldset--single">
               <legend class="order-form__legend">E-mail</legend>
               <label class="order-form__label" for="mail">
-                <input class="order-form__text" type="text" id="mail" name="mail" placeholder="Ваш Email*" required>
+                <input class="order-form__text" type="email" id="mail" name="mail" placeholder="Ваш Email*" required>
               </label>
-            </fieldset>
+            </div>
           </div>
           <div class="order-form__block">
-            <fieldset class="order-form__fieldset">
+            <div class="order-form__fieldset order-form__fieldset--single order-form__fieldset--textarea">
               <legend class="order-form__legend">Доп</legend>
               <label class="order-form__label" for="message">
                 <textarea class="order-form__textarea" id="message" name="message" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </label>
-            </fieldset>
+            </div>
           </div>
           <span class="order-form__hint">*Поля обязательны для заполнения</span>
           <button class="order-form__button button" type="submit">Отправить заказ</button>
@@ -142,33 +159,33 @@
     </section>
   </main>
   <footer class="page__footer footer">
-    <div class="container">
+    <div class="container container--full-screen">
       <a class="footer__logo logo" href="#">
-        <img class="logo__icon" src="img/logo-footer.svg" alt="Логотип">
+        <img class="logo__icon" src="img/logos/mishka-footer-logo.svg" alt="Логотип">
       </a>
       <ul class="footer__socials socials">
         <li class="socials__item">
-            <a href="#" class="socials__link">
+            <a href="#" class="socials__link socials__link--instagram">
               <span class="visually-hidden">Instagram</span>
             </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="#" class="socials__link socials__link--facebook">
             <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__link">
+          <a href="#" class="socials__link socials__link--twitter">
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
       </ul>
-    </div>
-    <div class="footer__copyright">
-      <span class="footer__copyright-text">Разработано</span>
-      <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="visually-hidden">HTML Academy</span>
-      </a>
+      <div class="footer__copyright">
+        <span class="footer__copyright-text">Разработано</span>
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

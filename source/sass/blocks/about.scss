@@ -1,0 +1,76 @@
+// .about {}
+
+.about__title {
+  margin-top: 31px;
+  margin-bottom: 28px;
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, minmax(100px, auto));
+}
+
+.about__item {
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  margin-bottom: 32px;
+
+  &--eco {
+    &:before {
+      content: "";
+      width: 33px;
+      height: 38px;
+      background-image: url("../img/icons/eco-icon.svg");
+      margin-bottom: 16px;
+    }
+  }
+  &--style {
+    &:before {
+      content: "";
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icons/style-icon.svg");
+      margin-bottom: 26px;
+    }
+  }
+  &--likes {
+    &:before {
+      content: "";
+      width: 34px;
+      height: 27px;
+      background-image: url("../img/icons/likes-icon.svg");
+      margin-bottom: 21px;
+    }
+  }
+  &--handmade {
+    &:before {
+      content: "";
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icons/handmade-icon.svg");
+      margin-bottom: 17px;
+    }
+  }
+  &--support {
+    &:before {
+      content: "";
+      width: 55px;
+      height: 23px;
+      background-image: url("../img/icons/support-icon.svg");
+      margin-bottom: 26px;
+    }
+  }
+  &--giftwrap {
+    &:before {
+      content: "";
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/icons/giftwrap-icon.svg");
+      margin-bottom: 20px;
+    }
+  }
+}

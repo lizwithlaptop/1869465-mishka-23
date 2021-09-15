@@ -1,0 +1,10 @@
+.button {
+  color: $text-secondary-color;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 16px 6px;
+  width: 100%;
+  border: $border-input-width solid $text-secondary-color;
+}

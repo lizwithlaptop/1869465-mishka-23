@@ -1,0 +1,17 @@
+.page {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  z-index: $z-base;
+}
+
+// .page__header {}
+
+// .page__main {}
+
+// .page__footer {}
+
+.page__overlay {
+  display: none;
+}
